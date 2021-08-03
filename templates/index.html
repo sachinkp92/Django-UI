@@ -1,0 +1,104 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: ##008CBA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 12px;
+  background-color: #dceffa;
+  padding: 12px;
+}
+</style>
+</head>
+<body>
+
+<h1>New SMS Campaign</h1>
+
+</body>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="sms from">SMS From</label>
+    <input type="text" id="smsfrom" name="smsfrom" placeholder="Send Plus">
+
+    <label for="sms text">SMS text (124 Symbols, 1 SMS)</label>
+    <textarea name="smstext" name="smstext" placeholder="Thank you for testing SendPulse SMS service. You will be able to change the content of your test messege after addming funds." style="height:200px"></textarea>
+
+    <label for="recipients">Recipients</label>
+    <select id="select" name="select">
+      <option value="add manually">Add Manually</option>
+    </select>
+
+
+
+ <textarea id="subject" name="subject" placeholder="Type and paste phone number per line. You can add no more than 500 contacts" style="height:200px"></textarea>
+<label for="sms from">You don't have any contacts yet</label>
+ <br>
+<br>
+<label for="sms from">SMS Send</label>
+<label class="radio">
+  <span class="radio__input">
+    <input type="radio" name="radio" />
+    <span class="radio__control"></span>
+  </span>
+  <span class="radio__label">Immediately</span>
+</label>
+
+<label class="radio">
+  <span class="radio__input">
+    <input type="radio" name="radio" />
+    <span class="radio__control"></span>
+  </span>
+  <span class="radio__label">Start sending SMS at</span>
+</label><br>
+<br>
+<button class="button">Send</button>
+<html>
+<head>
+<style>
+
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
+  </form>
